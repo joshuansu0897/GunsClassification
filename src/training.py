@@ -7,6 +7,8 @@ from tensorflow.python.keras.layers import Dropout, Flatten, Dense, Activation
 from tensorflow.python.keras.layers import  Convolution2D, MaxPooling2D
 from tensorflow.python.keras import backend as K
 
+#os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+
 K.clear_session()
 
 data_entrenamiento = './../data/training'
@@ -17,7 +19,7 @@ Parametros
 """
 epocas=20
 longitud, altura = 150, 150
-batch_size = 32
+batch_size = 3
 pasos = 1000
 validation_steps = 300
 filtrosConv1 = 32
