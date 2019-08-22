@@ -68,7 +68,7 @@ cnn.add(Dense(256, activation='relu'))
 cnn.add(Dropout(0.5))
 cnn.add(Dense(clases, activation='softmax'))
 
-cnn.compile(loss='categorical_crossentropy',
+cnn.compile(loss='binary_crossentropy',
             optimizer=optimizers.Adam(lr=lr),
             metrics=['accuracy'])
 
